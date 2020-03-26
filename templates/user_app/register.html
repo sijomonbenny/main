@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register-Alister</title>
+    <link rel="icon" type="image/png" href="static/log.ico"/>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="static/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Alister Web Mail- Sign Up</h2>
+                        <form method="post" class="register-form" id="register_via_keystroke" name="myForm">
+                            <div class="form-group">
+                                <label for="fname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="fname" id="fname" placeholder="First Name" required />
+                            </div>
+                             <div class="form-group">
+                                <label for="lname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="lname" id="lname" placeholder="Last Name"/>
+                            </div>
+                             <div class="form-group">
+                                <label for="age"><i class="zmdi zmdi-globe-alt"></i></label>
+                                <input type="text" name="age" id="age" placeholder="Age"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob"><i class="zmdi zmdi-calendar-alt"></i></label>
+                                <input type="date" name="dob" id="dob" placeholder="DOB"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="place"><i class="zmdi zmdi-pin-drop"></i></label>
+                                <input type="text" name="place" id="place" placeholder="Place"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><i class="zmdi zmdi-navigation"></i></label>
+                                <input type="text" name="city" id="city" placeholder="City"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="state"><i class="zmdi zmdi-pin-drop"></i></label>
+                                <input type="text" name="state" id="state" placeholder="State"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="zmdi zmdi-smartphone-android"></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone No."/>
+                            </div>
+                            <div class="form-group">
+                                <label for="user"><i class="zmdi zmdi-account-box"></i></label>
+                                <input type="text" name="user" id="user" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <p>Type for feature extraction:</p><br>
+                            <p>Hunt and peck (two-fingered typing), also known as Eagle Finger, is a common form of typing in which the typist presses each key individually. Instead of relying on the memorized position of keys, the typist must find each key by sight. Use of this method may also prevent the typist from being able to see what has been typed without glancing away from the keys.</p>
+                            <div class="form-group">
+                                
+                                
+                                <textarea name="feature_text" class="form-control" cols="39" rows="7" id="comment"></textarea>
+                            </div>
+                             <div class="form-group">
+
+
+                                <textarea name="feature_text1" class="form-control" cols="39" rows="7" id="comment1"></textarea>
+                            </div>
+                            <div class="form-group">
+
+
+                                <textarea name="feature_text1" class="form-control" cols="39" rows="7" id="comment2"></textarea>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            </div> -->
+                            <!-- <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div> -->
+                            <div class="form-group form-button">
+                                <input type="button" name="register" value="Register" class="form-submit" onclick="validateForm()">
+                          </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="static/images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="/" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+
+    </div>
+
+    <!-- JS -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script type="text/javascript">
+            function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["lname"].value;
+  var z = document.forms["myForm"]["place"].value;
+  var a = document.forms["myForm"]["dob"].value;
+  var b = document.forms["myForm"]["age"].value;
+  var c = document.forms["myForm"]["city"].value;
+  var d = document.forms["myForm"]["state"].value;
+  var e = document.forms["myForm"]["email"].value;
+  var f = document.forms["myForm"]["phone"].value;
+  var g = document.forms["myForm"]["user"].value;
+  var h = document.forms["myForm"]["pass"].value;
+  var i = document.forms["myForm"]["feature_text"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+}
+ else if (y == "") {
+    alert("Last Name must be filled out");
+    return false;
+}
+ else if (z == "") {
+    alert("Place must be filled out");
+    return false;
+}
+else if (a == "") {
+    alert("Date of Birth must be filled out");
+    return false;
+}
+else if (b == "") {
+    alert("Age must be filled out");
+    return false;
+}
+else if (c == "") {
+    alert("city must be filled out");
+    return false;
+}
+else if (d == "") {
+    alert("State must be filled out");
+    return false;
+}
+else if (e == "") {
+    alert("Email must be filled out");
+    return false;
+}
+else if (f == "") {
+    alert("Phone Number must be filled out");
+    return false;
+}
+else if (g == "") {
+    alert("Username must be filled out");
+    return false;
+}
+else if (h == "") {
+    alert("Password must be filled out");
+    return false;
+}
+else if (i == "") {
+    alert("Features must be filled out");
+    return false;
+}
+}
+    </script>
+    <script>
+
+        $(document).ready(function(){
+
+            key_timing = []
+
+            enable = true
+
+            $("#register_via_keystroke input[type='button']").click(function(){
+                
+                features = []
+                console.log(key_timing.length)
+                if (key_timing.length > 2){
+                    feature = []
+                    j = 0
+                    for(i=0;i<key_timing.length-1;i++){
+                        // feature.push(key_timing[i][0])
+                        // feature.push(key_timing[i+1][0])
+
+                        feature.push(key_timing[i][1]-key_timing[i][0])
+                        feature.push(key_timing[i+1][1]-key_timing[i+1][0])
+                        feature.push(key_timing[i+1][0]-key_timing[i][0])
+                        feature.push(key_timing[i+1][1]-key_timing[i][1])
+                        feature.push(key_timing[i+1][1]-key_timing[i][0])
+                        feature.push(key_timing[i+1][0]-key_timing[i][1])
+
+
+                        j++;
+                        //console.log(feature)
+                        if(j==1){
+                    
+                            features.push(feature)
+                            
+
+                            feature = []
+                            j = 0
+                        }
+                    }
+                    console.log(features)
+              }
+
+                obj = $('#register_via_keystroke').serializeArray()
+                obj.push({name:$(this).attr('name'),value:$(this).val()})
+                obj.push({name:'features',value:JSON.stringify(features)})
+                $.post('/register_action/',obj,function(data){
+                    obj = JSON.parse(data)
+                    if(obj['status'] == 'Successfully Registered'){
+                        alert(obj['status'])
+                        window.location = '/'
+                    }else{
+                        alert(obj['status'])
+                        window.location = '/'
+                    }
+                })
+                key_timing = []
+                features = []
+            })
+
+            key_info = []
+
+            $("#register_via_keystroke textarea[name='feature_text']").keydown(function(e){
+                if (key_info.length == 0){
+                    key_info.push(Date.now())
+                }else{
+                    e.preventDefault()
+                }
+            }); 
+            $("#register_via_keystroke textarea[name='feature_text']").keyup(function(e){
+                if (key_info.length == 1){
+                    key_info.push(Date.now())
+                    key_timing.push(key_info)
+                    key_info = []
+                }
+
+                if (event.keyCode === 13) {
+                 event.preventDefault();
+                document.getElementById("login").click();
+                 }
+                
+                
+            });
+     $("#register_via_keystroke textarea[name='feature_text1']").keydown(function(e){
+                if (key_info.length == 0){
+                    key_info.push(Date.now())
+                }else{
+                    e.preventDefault()
+                }
+            });
+            $("#register_via_keystroke textarea[name='feature_text1']").keyup(function(e){
+                if (key_info.length == 1){
+                    key_info.push(Date.now())
+                    key_timing.push(key_info)
+                    key_info = []
+                }
+
+                if (event.keyCode === 13) {
+                 event.preventDefault();
+                document.getElementById("login").click();
+                 }
+
+
+            });
+                 $("#register_via_keystroke textarea[name='feature_text2']").keydown(function(e){
+                if (key_info.length == 0){
+                    key_info.push(Date.now())
+                }else{
+                    e.preventDefault()
+                }
+            });
+            $("#register_via_keystroke textarea[name='feature_text2']").keyup(function(e){
+                if (key_info.length == 1){
+                    key_info.push(Date.now())
+                    key_timing.push(key_info)
+                    key_info = []
+                }
+
+                if (event.keyCode === 13) {
+                 event.preventDefault();
+                document.getElementById("login").click();
+                 }
+
+
+            });
+
+        })
+
+    </script>
+
+</body>
+</html>
