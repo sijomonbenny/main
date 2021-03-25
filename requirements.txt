@@ -102,7 +102,7 @@ pytz==2018.7
 PyVCF==0.6.8
 PyWavelets==1.0.1
 pywinpty==0.5.4
-PyYAML==3.13
+PyYAML==5.4
 pyzmq==17.1.2
 R305==2.0.0
 requests==2.0.0
