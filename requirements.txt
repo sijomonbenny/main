@@ -19,7 +19,7 @@ dask==1.0.0
 decorator==4.3.0
 demjson==2.2.4
 device==0.1
-Django==2.1.2
+Django==2.2.24
 django-mysql==2.4.1
 dlib==19.16.0
 docutils==0.14
