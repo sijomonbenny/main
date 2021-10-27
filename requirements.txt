@@ -15,7 +15,7 @@ cmake==3.13.2.post1
 colorama==0.4.0
 cycler==0.10.0
 Cython==0.29.1
-dask==1.0.0
+dask==2021.10.0
 decorator==4.3.0
 demjson==2.2.4
 device==0.1
