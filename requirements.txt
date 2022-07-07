@@ -105,7 +105,7 @@ pywinpty==0.5.4
 PyYAML==3.13
 pyzmq==17.1.2
 R305==2.0.0
-requests==2.0.0
+requests==2.20.0
 rsa==4.0
 s3transfer==0.2.0
 scikit-image==0.14.1
